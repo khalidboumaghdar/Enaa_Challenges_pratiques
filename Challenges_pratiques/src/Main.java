@@ -2,14 +2,16 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Dog jacke = new Dog("test1","test2");
+        Dog layka = new Dog("test2","test3");
+        System.out.println("Jake- Name: " + jacke.getName() + ", Race: " + jacke.getRace());
+        System.out.println("Layka - Name: " + layka.getName() + ", Race: " + layka.getRace());
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        jacke.setName("test3");
+        jacke.setRace("test4");
+        layka.setName("test5");
+        layka.setRace("test6");
+        System.out.println("Jake- Name: " + jacke.getName() + ", Race: " + jacke.getRace());
+        System.out.println("Layka - Name: " + layka.getName() + ", Race: " + layka.getRace()); 
     }
 }
