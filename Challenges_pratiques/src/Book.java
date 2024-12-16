@@ -41,4 +41,16 @@ public class Book {
                 ", ISBN='" + ISBN + '\'' +
                 '}';
     }
+    public String add(String title, String author, String isbn) {
+        Book book = new Book(title, author, isbn);
+//    System.out.println("Book- Name: " + book.getTitle()+ ", Auther: " + book.getAuthor()+ ", ISBN: " + book.getISBN());
+
+        return book.toString();
+    }
+public void remove(){
+        title = null;
+        author = null;
+        ISBN = null;
+        System.out.println("Books removed");
+}
 }
